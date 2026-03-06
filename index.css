@@ -7,10 +7,10 @@ html {
 
 section {
     border: 1px solid red;
+    height: 100%;
 }
 
 section#title {
-    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -81,6 +81,32 @@ section.slide ul {
 
 section.slide ul li {
     margin-left: 25px;
+}
+
+section#founder .upper-half, section#founder .bottom-half {
+    max-width: 1200px;
+    padding-left: clamp(1rem, 5vw, 3rem);
+    padding-right: clamp(1rem, 5vw, 3rem);
+}
+
+section#founder .upper-half {
+    display: flex;
+    flex-direction:row;
+    justify-content: left;
+    background-color: black;
+    color: white;
+    height: 50%;
+}
+
+section#founder .upper-half > * {
+    flex-grow: 1;
+}
+
+section#founder .upper-half img {
+    max-width: 300px;
+    border: 1px solid white;
+    flex-grow: 0;
+    flex-basis: auto;
 }
 
 @media (max-width: 500px) {
