@@ -289,4 +289,19 @@ section#podcast .sources img {
         font-weight: bold;
         margin-top: auto;
     }
+
+    section#podcast {
+        flex-direction: column;
+        height: initial;
+    }
+    section#podcast .sidebar {
+        width: 100%;
+        margin-bottom: 25px;
+    }
+    section#podcast .sources {
+        overflow-y: initial;
+    }
+    section#podcast .sources img {
+        margin-bottom: 25px;
+    }
 }
