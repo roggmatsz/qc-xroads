@@ -2,7 +2,8 @@ body,
 html {
     font-family: sans-serif;
     margin: 0;
-    height: 100%;
+    height: -webkit-fill-available;
+    height: 100vh;
 }
 
 section {
@@ -210,6 +211,16 @@ section#podcast .sidebar {
     width: 33%;
     background-color: black;
     color: white;
+}
+
+section.slide {
+    height: -webkit-fill-available;
+    height: 100vh;
+}
+
+section#team {
+    height: -webkit-fill-available;
+    height: 100vh;
 }
 section#podcast .sources {
     height: 100%;
