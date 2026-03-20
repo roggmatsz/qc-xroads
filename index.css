@@ -187,6 +187,9 @@ section#team .teammate span {
 section#team .teammate h3 {
     margin-top: 25px;
 }
+section#team .teammate span {
+    font-weight: 500;
+}
 
 section#team .teammate p {
     font-size: 20px;
@@ -312,9 +315,11 @@ section#podcast .sources img {
         flex-direction: column;
         height: initial;
     }
-    section#podcast .sidebar {
+
+    sec section#podcast .sidebar {
         width: 100%;
         margin-bottom: 25px;
+        margin-top: 50px;
     }
     section#podcast .sources {
         overflow-y: initial;
