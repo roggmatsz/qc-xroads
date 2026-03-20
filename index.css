@@ -280,6 +280,10 @@ section#podcast .sources img {
         max-height: 200px;
     }
 
+    section#team {
+        height: initial;
+        padding-bottom: 25px;
+    }
     section#team h2 {
         margin-bottom: 25px;
     }
@@ -288,7 +292,7 @@ section#podcast .sources img {
         padding-left: 25px;
     }
     section#team .teammate {
-        margin-right: 25px;
+        margin-right: 50px;
     }
     section#team .teammate a {
         align-self: baseline;
