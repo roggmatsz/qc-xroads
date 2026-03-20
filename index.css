@@ -17,6 +17,16 @@ section#title {
     align-items: center;
 }
 
+a {
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
+    text-decoration-thickness: 3px;
+    color: white;
+}
+a:visited {
+    color: #aaa;
+}
+
 section#title small {
     font-weight: bold;
     font-size: 5vmax;
@@ -188,7 +198,7 @@ section#team .teammate h3 {
     margin-top: 25px;
 }
 section#team .teammate span {
-    font-weight: 500;
+    font-weight: bold;
 }
 
 section#team .teammate p {
