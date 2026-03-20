@@ -319,7 +319,11 @@ section#podcast .sources img {
     section#podcast .sidebar {
         width: 100%;
         margin-bottom: 25px;
-        margin-top: 50px;
+        padding-top: 25px;
+    }
+    section#podcast .sidebar > div {
+        padding-left: 25px;
+        padding-right: 25px;
     }
 
     section#podcast .sources {
