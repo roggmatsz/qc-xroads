@@ -250,6 +250,9 @@ section#podcast .sources img {
         font-size: 21px;
     }
 
+    section.slide h2 {
+        height: 20vh;
+    }
     section#founder {
         height: initial;
     }
