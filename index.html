@@ -108,27 +108,25 @@
             <h2>Creative Team</h2>
             <div class="team-group">
                 <div class="teammate">
-                    <div class="bio-short">
-                        <div class="image-container">
-                            <img
-                                src="assets/headshots/chris.jpg"
-                                alt="Chris Moxley Headshot"
-                            />
-                        </div>
-                        <h3>Chris Moxley</h3>
-                        <span>Host</span>
-                        <p>
-                            Born and raised in Charlotte. Founder of 704 Shop and
-                            creator of Fact Friday, an inclusive history of
-                            Charlotte that inspires hometown pride.
-                        </p>
-                        <button type="button" class="btn-open">Learn More</button>
+                    <div class="image-container">
+                        <img
+                            src="assets/headshots/chris.jpg"
+                            alt="Chris Moxley Headshot"
+                        />
                     </div>
-                    <div class="bio-extended hidden">
-                        <button type="button" class="btn-close">&times</button>
+                    <h3>Chris Moxley</h3>
+                    <span>Host</span>
+                    <p>
+                        Born and raised in Charlotte. Founder of 704 Shop and
+                        creator of Fact Friday, an inclusive history of
+                        Charlotte that inspires hometown pride.
+                    </p>
+                    <button type="button" command="show-modal" commandfor="chris-dialog">Learn More</button>
+                    <dialog id="chris-dialog" class="bio-extended">
                         <h3>About Chris</h3>
                         <p>Christopher Moxley is a career Fortune 100, corporate professional turned Forbes-featured, full-time entrepreneur. He is co-founder of several businesses, including the award-winning Charlotte-based lifestyle and apparel brand, 704 Shop, which he scaled into a widely known 7-figure business and made a successful exit. His primary skillset includes business strategy, sales, operations, and expanding both business relationships and brand visibility. Chris is passionate about his hometown of Charlotte, NC and its history, having founded and curated 704 Shop’s Fact Friday series - an inclusive history of Charlotte that inspires hometown pride - and demonstrates this passion through service to the community in the form of philanthropy, volunteerism, and non-profit board service. </p>
-                    </div>
+                        <button type="button" command="close" command-for="chris-dialog">Close</button>
+                    </dialog>
                 </div>
                 <div class="teammate">
                     <div class="image-container">
@@ -144,7 +142,12 @@
                         author of "Charlotte: Then and Now." Former librarian at
                         JCSU.
                     </p>
-                    <button type="button">Learn More</button>
+                    <button type="button" command="show-modal" commandfor="my-dialog">Learn More</button>
+
+                    <dialog id="my-dialog">
+                      <p>This dialog was opened using an invoker command.</p>
+                      <button commandfor="my-dialog" command="close">Close</button>
+                    </dialog>
                 </div>
                 <div class="teammate">
                     <div class="image-container">
@@ -214,6 +217,4 @@
             </div>
         </section>
     </body>
-
-    <script src="index.js"></script>
 </html>
